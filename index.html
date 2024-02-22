@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <title>To Do</title>
+</head>
+
+<body class="dark_theme">
+      <div class="box_initial">
+         <h1 class="title">ToDo</h1>
+         <span class="icon_theme"></span>
+      </div>
+   <form autocomplete="off">
+      <div class="container">
+         <span class="checkmark"></span>
+         <input autocomplete="one-time-code" class="todo_input" type="text" placeholder="Create a new todo...">
+      </div>
+      <ul class="todo_list">
+      </ul>
+   </form>
+   <div class="filter_container">
+      <p class="todo_count"><span>0</span> item left</p>
+      <div class="filter">
+         <label class="checked" for="all">All<input type="radio" name="filter" id="all" checked></label>
+         <label class="" for="active">Active<input type="radio" name="filter" id="active"></label>
+         <label class="" for="completed">Completed<input type="radio" name="filter" id="completed"></label>
+      </div>
+      <span class="todo_clear">Clear Completed</span>
+   </div>
+   <div class="menu_mobile">
+      <p class="todo_count"><span>0</span> item left</p>
+      <span class="todo_clear">Clear Completed</span>
+   </div>
+   <div class="filter_mobile">
+      <div class="filter">
+         <label class="checked" for="all">All<input type="radio" name="filter" id="all" checked></label>
+         <label class="" for="active">Active<input type="radio" name="filter" id="active"></label>
+         <label class="" for="completed">Completed<input type="radio" name="filter" id="completed"></label>
+      </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+
+</html>
